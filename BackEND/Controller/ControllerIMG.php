@@ -19,9 +19,9 @@ function ObtenerImagen()
 }
 function IngresarImagen()
 {
-    $Nombre = $_POST['Nombre'];
-    $Imagen = $_FILES ['Imagen']
-    $resultado = (new imagen())->IngresarImagenModel($Nombre, $Imagen);
+    $nombre = $_POST['nombre'];
+    $imagen = $_FILES['imagen'];
+    $resultado = (new imagen())->IngresarImagenModel($nombre, $imagen);
     echo json_encode($resultado);
 }
 ?>
