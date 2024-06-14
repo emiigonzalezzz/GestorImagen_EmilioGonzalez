@@ -8,7 +8,7 @@ function IngresarImagen(){
     formElement.onsubmit = async (e) =>{
         e.preventDefault()
         let formData =  new FormData(formElement);
-        let url = "http://localhost/GestorImagen_EmilioGonzalez/BackEND/Connection/Connection.php?function=IngresarImagen";
+        let url = "http://localhost/GestorImagen_EmilioGonzalez/BackEND/Controller/ControllerIMG.php?function=IngresarImagen";
 
         let config = {
             method: 'POST',
