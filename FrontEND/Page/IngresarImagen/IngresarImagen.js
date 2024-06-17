@@ -14,11 +14,10 @@ function IngresarImagen(){
             method: 'POST',
             body: formData
         }
-        
+        formElement.reset;
         let respuesta = await fetch(url, config);
         let datos = await respuesta.json();
         console.log(datos);
-        formElement.reset();
-       
+        
 }
 }
