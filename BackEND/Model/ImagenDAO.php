@@ -22,7 +22,6 @@ class imagen
         $id = $connection->insert_id;
         $RutaTemp = $imagen['tmp_name'];
         move_uploaded_file($RutaTemp, "./Imagenes/".$id.".". $extension);
-        $imagenes = $respuesta->fetch_all(MYSQLI_ASSOC);
-        return $imagenes;
+        return $respuesta;
     }
 }
